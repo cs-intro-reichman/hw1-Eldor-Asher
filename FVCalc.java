@@ -5,8 +5,7 @@ public class FVCalc {
 		double percentage = Double.parseDouble(args[1]);
 		int year = Integer.parseInt(args[2]);
 		double rate = percentage / 100.0;
-		percentage = percentage % 100 ;
 		double total = correct_value * Math.pow((1 + rate),year);
-		System.out.println("After " +year+ " years, $ " +correct_value+ " saved at " +percentage+ "% will yield $" +(int)total);
+		System.out.println("After " +year+ " years, $" +correct_value+ " saved at " +percentage+ "% will yield $" +(int)total);
 	}
 }
