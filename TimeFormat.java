@@ -9,7 +9,7 @@ public class TimeFormat {
 			time = "PM";
 			hours = hours - 12;
 		}
-		String formattedMinutes;
+	String formattedMinutes;
 	if (minutes < 10) {
     	formattedMinutes = "0" + minutes;
 	} 
