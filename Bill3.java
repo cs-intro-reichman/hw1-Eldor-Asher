@@ -3,7 +3,11 @@ public class Bill3 {
 	public static void main(String[] args) {
 		// To get you started, here is the first line in the program:
 	    String name1 = args[0];
-	    // Replace this comment with the rest of your code 
-		int i = 10;  
+		String name2 = args[1];
+		String name3 = args[2];
+		int number = Integer.parseInt(args[3]);
+		double bill = number / 3;
+		bill = Math.ceil(bill);
+		System.out.println("hi "+name3+", "+name2+" and "+name1+" you have to pay "+bill+" Shekel each one");
 	}
 }
