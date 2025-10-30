@@ -1,5 +1,6 @@
 
 public class Ascend {
+	//
 	public static void main(String[] args) {
 		int limit = Integer.parseInt(args[0]);
 		int num1 = (int)(Math.random()*limit);
