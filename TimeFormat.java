@@ -9,6 +9,13 @@ public class TimeFormat {
 			time = "PM";
 			hours = hours - 12;
 		}
+		String formattedMinutes;
+	if (minutes < 10) {
+    	formattedMinutes = "0" + minutes;
+	} 
+	else {
+    	formattedMinutes = String.valueOf(minutes); 
+	}
 		System.out.println(hours + ":" + minutes + " " + time);
 	}
 }
