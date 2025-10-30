@@ -16,6 +16,6 @@ public class TimeFormat {
 	else {
     	formattedMinutes = String.valueOf(minutes); 
 	}
-		System.out.println(hours + ":" + minutes + " " + time);
+		System.out.println(hours + ":" + formattedMinutes + " " + time);
 	}
 }
