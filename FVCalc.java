@@ -2,11 +2,11 @@
 public class FVCalc {
 	public static void main(String[] args){
 		int correct_value = Integer.parseInt(args[0]);
-		int percentage = Integer.parseInt(args[1]);
+		double percentage = Double.parseDouble(args[1]);
 		int year = Integer.parseInt(args[2]);
-		double rate = (double)percentage / 100;
+		double rate = percentage / 100.0;
 		percentage = percentage % 100 ;
 		double total = correct_value * Math.pow((1 + rate),year);
-		System.out.println("After " +year+ " years " +correct_value+ " saved at " +percentage+ "% will yield " +(int)total+ " shekels!");
+		System.out.println("After " +year+ " years, $ " +correct_value+ " saved at " +percentage+ "% will yield $" +(int)total);
 	}
 }
